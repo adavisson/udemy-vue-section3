@@ -17,26 +17,30 @@
       <button @click="show = !show">Switch</button>
     </div>
 
-    <hr>
-    <hr>
+    <hr />
+    <hr />
 
     <div id="app2">
       <ul>
-        <li v-for="(ingredient, index) in ingredients">{{ ingredient }} ({{ index }})</li>
+        <li v-for="(ingredient, index) in ingredients">
+          {{ ingredient }} ({{ index }})
+        </li>
       </ul>
-      
-      <hr>
+
+      <hr />
 
       <ul>
         <li v-for="person in persons">
-          <div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{ index }})</div>
+          <div v-for="(value, key, index) in person">
+            {{ key }}: {{ value }} ({{ index }})
+          </div>
         </li>
       </ul>
 
       <span v-for="n in 10">{{ n }} </span>
 
-      <hr>
-      
+      <hr />
+
       <template v-for="(ingredient, index) in ingredients">
         <h1>{{ ingredient }}</h1>
         <p>{{ index }}</p>
